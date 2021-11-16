@@ -15,22 +15,38 @@ import IntentsUI
 // "Send a message using <myApp>"
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var textlabel: UILabel!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
+
+  // MARK: - INUIHostedViewControlling
+
+  // Prepare your view controller for the interaction to handle.
+  func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
+    guard interaction.intent is ShowCartIntent else {
+      completion(false, Set(), .zero)
+      return
     }
-        
-    // MARK: - INUIHostedViewControlling
-    
-    // Prepare your view controller for the interaction to handle.
-    func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
-        // Do configuration here, including preparing views and calculating a desired size for presentation.
-        completion(true, parameters, self.desiredSize)
-    }
-    
-    var desiredSize: CGSize {
-        return self.extensionContext!.hostedViewMaximumAllowedSize
-    }
-    
+
+    let width = self.extensionContext?.hostedViewMaximumAllowedSize.width ?? 320
+    let desiredSize = CGSize(width: width, height: 300)
+
+    // The intentHandlingStatus never changed to .ready for me. It did sometimes change to .success.
+    // Maybe this is buggy or maybe I don't understand how this should work
+    //
+    // if interaction.intentHandlingStatus == .ready {
+    //     // A view for the .ready state
+    // } else if interaction.intentHandlingStatus == .success {
+    //     // A view for the .success state
+    // }
+    textlabel.text = "this is showing cart"
+
+    completion(true, parameters, desiredSize)
+  }
+
+  var desiredSize: CGSize {
+    return extensionContext!.hostedViewMaximumAllowedSize
+  }
 }
