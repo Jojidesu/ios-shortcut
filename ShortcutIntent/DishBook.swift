@@ -12,6 +12,7 @@ struct DishModel: Decodable {
     let identifier: String
     let displayString: String
     let price: Decimal?
+    let image: String?
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -22,16 +23,19 @@ struct DishModel: Decodable {
         } else {
             price = nil
         }
+        image = try container.decodeIfPresent(String.self, forKey: .image)
     }
 
     enum CodingKeys: String, CodingKey {
         case identifier = "id"
         case displayString = "name"
         case price = "price"
+        case image
     }
 
     var dish: Dish {
         let intentModel = Dish(identifier: identifier, display: displayString)
+      intentModel.displayImage = INImage(named: image ?? "burger")
         intentModel.price = NSDecimalNumber(decimal: price ?? 0)
         return intentModel
     }
