@@ -12,6 +12,10 @@ import Intents
 class OrderFoodIntentHandler: NSObject, OrderFoodIntentHandling {
     let displayNumber = 5
 
+    func confirm(intent: OrderFoodIntent, completion: @escaping (OrderFoodIntentResponse) -> Void) {
+        completion(OrderFoodIntentResponse(code: .ready, userActivity: nil))
+    }
+
     func handle(intent: OrderFoodIntent, completion: @escaping (OrderFoodIntentResponse) -> Void) {
         guard let _ = intent.restaurant,
         let _ = intent.dish,

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2907E33C2744A6B000CA2052 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 2907E33B2744A6B000CA2052 /* restaurants.json */; };
-		293C25DF2744BBB5002E3435 /* ShowCartIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */; };
 		293C25E02744BBB5002E3435 /* CategoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60627449DB2007E7E68 /* CategoryBook.swift */; };
 		293C25E12744BBB5002E3435 /* DishBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60527449DB2007E7E68 /* DishBook.swift */; };
 		293C25E22744BBB5002E3435 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */; };
 		293C25E32744BBB5002E3435 /* RestaurantBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60727449DB2007E7E68 /* RestaurantBook.swift */; };
 		293C25E42744BBB5002E3435 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60B27449DD5007E7E68 /* JsonLoader.swift */; };
-		293DB5D627449921007E7E68 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */; };
+		293C25E52744CEDC002E3435 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */; };
+		293C25E62744CEEF002E3435 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 2907E33B2744A6B000CA2052 /* restaurants.json */; };
+		293C25E72744D0E7002E3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC230482743EE12000B1EA1 /* Assets.xcassets */; };
 		AFC230432743EE11000B1EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230422743EE11000B1EA1 /* AppDelegate.swift */; };
 		AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230442743EE11000B1EA1 /* SceneDelegate.swift */; };
 		AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230462743EE11000B1EA1 /* ContentView.swift */; };
@@ -85,7 +85,6 @@
 /* Begin PBXFileReference section */
 		2907E33B2744A6B000CA2052 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
-		293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCartIntentHandler.swift; sourceTree = "<group>"; };
 		293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
 		293DB60527449DB2007E7E68 /* DishBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishBook.swift; sourceTree = "<group>"; };
 		293DB60627449DB2007E7E68 /* CategoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBook.swift; sourceTree = "<group>"; };
@@ -240,7 +239,6 @@
 				AFC2307E2743EEB2000B1EA1 /* IntentHandler.swift */,
 				AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */,
 				293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */,
-				293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */,
 				293DB60627449DB2007E7E68 /* CategoryBook.swift */,
 				293DB60527449DB2007E7E68 /* DishBook.swift */,
 				293DB60727449DB2007E7E68 /* RestaurantBook.swift */,
@@ -410,7 +408,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2907E33C2744A6B000CA2052 /* restaurants.json in Resources */,
 				AFC2304F2743EE12000B1EA1 /* LaunchScreen.storyboard in Resources */,
 				AFC2304C2743EE12000B1EA1 /* Preview Assets.xcassets in Resources */,
 				AFC230492743EE12000B1EA1 /* Assets.xcassets in Resources */,
@@ -435,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293C25E62744CEEF002E3435 /* restaurants.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293C25E72744D0E7002E3435 /* Assets.xcassets in Resources */,
 				AFC2308D2743EEB3000B1EA1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +456,6 @@
 				AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */,
 				AFC230A22743EF73000B1EA1 /* Intents.intentdefinition in Sources */,
 				AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */,
-				293DB5D627449921007E7E68 /* NSUserActivity+IntentData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +481,8 @@
 			files = (
 				AFC230A32743EF73000B1EA1 /* Intents.intentdefinition in Sources */,
 				293C25E42744BBB5002E3435 /* JsonLoader.swift in Sources */,
-				293C25DF2744BBB5002E3435 /* ShowCartIntentHandler.swift in Sources */,
 				293C25E22744BBB5002E3435 /* OrderFoodIntentHandler.swift in Sources */,
+				293C25E52744CEDC002E3435 /* NSUserActivity+IntentData.swift in Sources */,
 				293C25E32744BBB5002E3435 /* RestaurantBook.swift in Sources */,
 				293C25E12744BBB5002E3435 /* DishBook.swift in Sources */,
 				AFC230BF2743F190000B1EA1 /* CreateOrderIntentHandler.swift in Sources */,
@@ -672,14 +670,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"shortcut/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = shortcut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -696,14 +694,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"shortcut/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = shortcut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -717,7 +715,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = shortcutTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -739,7 +737,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = shortcutTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,7 +758,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = shortcutUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -780,7 +778,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = shortcutUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -799,14 +797,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intentui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -818,14 +816,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intentui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -837,14 +835,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -856,14 +854,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

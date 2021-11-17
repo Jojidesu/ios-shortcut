@@ -29,7 +29,7 @@
 				<string>CreateOrderIntent</string>
 				<string>INSendMessageIntent</string>
 				<string>OrderFoodIntent</string>
-				<string>ShowCartIntent</string>
+				<string>ReorderIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>

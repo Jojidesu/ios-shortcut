@@ -18,14 +18,11 @@ import Intents
 
 class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
     lazy var orderFood: OrderFoodIntentHandler = OrderFoodIntentHandler()
-    lazy var showCart: ShowCartIntentHandler = ShowCartIntentHandler()
 
   override func handler(for intent: INIntent) -> Any {
       switch intent {
       case intent as OrderFoodIntent:
           return orderFood
-      case intent as ShowCartIntent:
-          return showCart
       case intent as CreateOrderIntent:
           return CreateOrderIntentHandler()
 //        case intent as SelectRestaurantIntent:

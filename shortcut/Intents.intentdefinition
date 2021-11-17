@@ -9,45 +9,39 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>u0cDsi</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19H1217</string>
+	<string>20G165</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12D4e</string>
+	<string>13A1030d</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.4</string>
+	<string>13.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>order</string>
+			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
-			<key>INIntentDescription</key>
-			<string>Creating order based on your selections</string>
 			<key>INIntentDescriptionID</key>
 			<string>DV7Xjy</string>
+			<key>INIntentEligibleForWidgets</key>
+			<true/>
 			<key>INIntentLastParameterTag</key>
-			<integer>14</integer>
+			<integer>21</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
-				<key>dish,quantity,restaurant</key>
+				<key>restaurant,dish</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Shortcuts: Your cart has ${restaurant} ${quantity} ${dish}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>FD0FtT</string>
-					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
-				<key>restaurant</key>
+				<key>restaurant,quantity,dish</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${restaurant}</string>
+					<string>Choose ${restaurant} ${dish} ${quantity}</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>GaTvXQ</string>
+					<string>FD0FtT</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
@@ -56,25 +50,16 @@
 			<string>OrderFood</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>dish,quantity,restaurant</key>
+				<key>restaurant,quantity,dish</key>
 				<dict>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${quantity} from ${restaurant}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>J5JRX5</string>
-				</dict>
-				<key>restaurant</key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
+					<key>INIntentParameterCombinationIsLinked</key>
 					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Order ${restaurant}</string>
+					<string>Choose ${restaurant} ${dish} ${quantity}</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>coqa34</string>
+					<string>p6Q2kH</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -124,7 +109,7 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Which restaurant you want?</string>
+							<string>Which restaurant do you want?</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
 							<string>xmCpnx</string>
 							<key>INIntentParameterPromptDialogType</key>
@@ -156,9 +141,9 @@
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Food &amp; Beverage</string>
+					<string>Dish</string>
 					<key>INIntentParameterDisplayNameID</key>
-					<string>4duxZD</string>
+					<string>NzDY97</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>2</integer>
 					<key>INIntentParameterName</key>
@@ -178,16 +163,16 @@
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Choose your ${dish}</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>xtoSBi</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Primary</string>
 						</dict>
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Select ${dish}</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>mLlxS4</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>DisambiguationIntroduction</string>
 						</dict>
@@ -195,40 +180,21 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Which food you want?</string>
+							<string>Just to confirm, you wanted ‘${dish}’?</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>iRlJ6f</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationSelection</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Just to confirm, you wanted ${dish}?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>g5s1JR</string>
+							<string>uNdDXj</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Confirmation</string>
 						</dict>
 					</array>
-					<key>INIntentParameterRelationship</key>
-					<dict>
-						<key>INIntentParameterRelationshipParentName</key>
-						<string>restaurant</string>
-						<key>INIntentParameterRelationshipPredicateName</key>
-						<string>HasAnyValue</string>
-					</dict>
 					<key>INIntentParameterSupportsDynamicEnumeration</key>
 					<true/>
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>14</integer>
+					<integer>21</integer>
 					<key>INIntentParameterType</key>
 					<string>Object</string>
-					<key>INIntentParameterWindowSize</key>
-					<integer>3</integer>
 				</dict>
 				<dict>
 					<key>INIntentParameterConfigurable</key>
@@ -238,7 +204,7 @@
 					<key>INIntentParameterDisplayName</key>
 					<string>Quantity</string>
 					<key>INIntentParameterDisplayNameID</key>
-					<string>m1Zfru</string>
+					<string>1aJrqo</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>3</integer>
 					<key>INIntentParameterMetadata</key>
@@ -264,9 +230,9 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Choose the quantity?</string>
+							<string>select ${quantity}</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>UMVvL5</string>
+							<string>TIV2YR</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Primary</string>
 						</dict>
@@ -274,9 +240,9 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Just to confirm, you wanted ${quantity}?</string>
+							<string>Just to confirm, you wanted ‘${quantity}’?</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>bCQnK5</string>
+							<string>JolgrC</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Confirmation</string>
 						</dict>
@@ -284,14 +250,14 @@
 					<key>INIntentParameterRelationship</key>
 					<dict>
 						<key>INIntentParameterRelationshipParentName</key>
-						<string>restaurant</string>
+						<string>dish</string>
 						<key>INIntentParameterRelationshipPredicateName</key>
 						<string>HasAnyValue</string>
 					</dict>
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>10</integer>
+					<integer>20</integer>
 					<key>INIntentParameterType</key>
 					<string>Integer</string>
 					<key>INIntentParameterUnsupportedReasons</key>
@@ -304,7 +270,7 @@
 							<key>INIntentParameterUnsupportedReasonFormatString</key>
 							<string>${displayName} can’t be negative.</string>
 							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>F24rbl</string>
+							<string>SzPErq</string>
 						</dict>
 						<dict>
 							<key>INIntentParameterUnsupportedReasonCode</key>
@@ -314,7 +280,7 @@
 							<key>INIntentParameterUnsupportedReasonFormatString</key>
 							<string>${displayName} can’t be higher than ${maximumValue}.</string>
 							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>ugDlfR</string>
+							<string>YTz81I</string>
 						</dict>
 						<dict>
 							<key>INIntentParameterUnsupportedReasonCode</key>
@@ -324,7 +290,7 @@
 							<key>INIntentParameterUnsupportedReasonFormatString</key>
 							<string>${displayName} can’t be lower than ${minimumValue}.</string>
 							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>ZTg2cl</string>
+							<string>p3emTL</string>
 						</dict>
 					</array>
 				</dict>
@@ -433,15 +399,13 @@
 			<key>INIntentRestrictions</key>
 			<integer>1</integer>
 			<key>INIntentTitle</key>
-			<string>Order Food</string>
+			<string>Choose menu</string>
 			<key>INIntentTitleID</key>
 			<string>F4cEdl</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
-			<key>INIntentUserConfirmationRequired</key>
-			<true/>
 			<key>INIntentVerb</key>
-			<string>Order</string>
+			<string>Do</string>
 		</dict>
 		<dict>
 			<key>INIntentCategory</key>
@@ -449,33 +413,50 @@
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescriptionID</key>
-			<string>Ta5ECD</string>
+			<string>vv3lkA</string>
 			<key>INIntentInput</key>
 			<string>cart</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key>cart</key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Checkout</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>oQokkT</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
 			</dict>
 			<key>INIntentName</key>
-			<string>ShowCart</string>
+			<string>CreateOrder</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>cart</key>
+				<key></key>
 				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>suggestion section</string>
+					<string>Checkout order</string>
 					<key>INIntentParameterCombinationTitleID</key>
-					<string>bIfqq6</string>
+					<string>dW1ko5</string>
+				</dict>
+				<key>cart</key>
+				<dict>
+					<key>INIntentParameterCombinationIsLinked</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Checkout</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>iRM5zD</string>
 				</dict>
 			</dict>
 			<key>INIntentParameters</key>
@@ -486,7 +467,7 @@
 					<key>INIntentParameterDisplayName</key>
 					<string>Cart</string>
 					<key>INIntentParameterDisplayNameID</key>
-					<string>3Ur01l</string>
+					<string>447js9</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
@@ -507,9 +488,9 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>anc</string>
+							<string>You are missing ${cart}</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>iDNUn4</string>
+							<string>3M3jg7</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Primary</string>
 						</dict>
@@ -517,83 +498,11 @@
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>3</integer>
+					<integer>2</integer>
 					<key>INIntentParameterType</key>
 					<string>Object</string>
 				</dict>
 			</array>
-			<key>INIntentResponse</key>
-			<dict>
-				<key>INIntentResponseCodes</key>
-				<array>
-					<dict>
-						<key>INIntentResponseCodeFormatString</key>
-						<string>done</string>
-						<key>INIntentResponseCodeFormatStringID</key>
-						<string>G2a9FE</string>
-						<key>INIntentResponseCodeName</key>
-						<string>success</string>
-						<key>INIntentResponseCodeSuccess</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>INIntentResponseCodeName</key>
-						<string>failure</string>
-					</dict>
-				</array>
-			</dict>
-			<key>INIntentRestrictions</key>
-			<integer>1</integer>
-			<key>INIntentTitle</key>
-			<string>Show Cart</string>
-			<key>INIntentTitleID</key>
-			<string>ITxQn5</string>
-			<key>INIntentType</key>
-			<string>Custom</string>
-			<key>INIntentUserConfirmationRequired</key>
-			<true/>
-			<key>INIntentVerb</key>
-			<string>Order</string>
-		</dict>
-		<dict>
-			<key>INIntentCategory</key>
-			<string>order</string>
-			<key>INIntentConfigurable</key>
-			<true/>
-			<key>INIntentDescription</key>
-			<string>Creating order based on your selection</string>
-			<key>INIntentDescriptionID</key>
-			<string>vv3lkA</string>
-			<key>INIntentManagedParameterCombinations</key>
-			<dict>
-				<key></key>
-				<dict>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Creating order based on your selection</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>oQokkT</string>
-					<key>INIntentParameterCombinationUpdatesLinked</key>
-					<true/>
-				</dict>
-			</dict>
-			<key>INIntentName</key>
-			<string>CreateOrder</string>
-			<key>INIntentParameterCombinations</key>
-			<dict>
-				<key></key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<true/>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Creating order based on your selection</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>dW1ko5</string>
-				</dict>
-			</dict>
 			<key>INIntentResponse</key>
 			<dict>
 				<key>INIntentResponseCodes</key>
@@ -640,7 +549,7 @@
 			<key>INIntentRestrictions</key>
 			<integer>1</integer>
 			<key>INIntentTitle</key>
-			<string>Create Order</string>
+			<string>Make order</string>
 			<key>INIntentTitleID</key>
 			<string>1DRL0Q</string>
 			<key>INIntentType</key>
@@ -649,6 +558,60 @@
 			<true/>
 			<key>INIntentVerb</key>
 			<string>Order</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescriptionID</key>
+			<string>bM09K6</string>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>Reorder</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Reorder</string>
+			<key>INIntentTitleID</key>
+			<string>ta2Cks</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
 		</dict>
 	</array>
 	<key>INTypes</key>
@@ -1139,6 +1102,101 @@
 					<string>quantity</string>
 					<key>INTypePropertyTag</key>
 					<integer>103</integer>
+					<key>INTypePropertyType</key>
+					<string>Integer</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>INTypeDisplayName</key>
+			<string>Selected Item</string>
+			<key>INTypeDisplayNameID</key>
+			<string>EIWK2W</string>
+			<key>INTypeLastPropertyTag</key>
+			<integer>103</integer>
+			<key>INTypeName</key>
+			<string>SelectedItem</string>
+			<key>INTypeProperties</key>
+			<array>
+				<dict>
+					<key>INTypePropertyDefault</key>
+					<true/>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>1</integer>
+					<key>INTypePropertyName</key>
+					<string>identifier</string>
+					<key>INTypePropertyTag</key>
+					<integer>1</integer>
+					<key>INTypePropertyType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDefault</key>
+					<true/>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>2</integer>
+					<key>INTypePropertyName</key>
+					<string>displayString</string>
+					<key>INTypePropertyTag</key>
+					<integer>2</integer>
+					<key>INTypePropertyType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDefault</key>
+					<true/>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>3</integer>
+					<key>INTypePropertyName</key>
+					<string>pronunciationHint</string>
+					<key>INTypePropertyTag</key>
+					<integer>3</integer>
+					<key>INTypePropertyType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDefault</key>
+					<true/>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>4</integer>
+					<key>INTypePropertyName</key>
+					<string>alternativeSpeakableMatches</string>
+					<key>INTypePropertySupportsMultipleValues</key>
+					<true/>
+					<key>INTypePropertyTag</key>
+					<integer>4</integer>
+					<key>INTypePropertyType</key>
+					<string>SpeakableString</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDisplayName</key>
+					<string>Dish</string>
+					<key>INTypePropertyDisplayNameID</key>
+					<string>tJvhrL</string>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>5</integer>
+					<key>INTypePropertyName</key>
+					<string>dish</string>
+					<key>INTypePropertyObjectType</key>
+					<string>Dish</string>
+					<key>INTypePropertyObjectTypeNamespace</key>
+					<string>u0cDsi</string>
+					<key>INTypePropertyTag</key>
+					<integer>103</integer>
+					<key>INTypePropertyType</key>
+					<string>Object</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDisplayName</key>
+					<string>Quantity</string>
+					<key>INTypePropertyDisplayNameID</key>
+					<string>XbbdPy</string>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>6</integer>
+					<key>INTypePropertyName</key>
+					<string>quantity</string>
+					<key>INTypePropertyTag</key>
+					<integer>102</integer>
 					<key>INTypePropertyType</key>
 					<string>Integer</string>
 				</dict>
