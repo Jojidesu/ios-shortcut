@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF94FFA027448E090014F73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC230482743EE12000B1EA1 /* Assets.xcassets */; };
+		2907E33C2744A6B000CA2052 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 2907E33B2744A6B000CA2052 /* restaurants.json */; };
+		293DB5D627449921007E7E68 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */; };
+		293DB60327449D8E007E7E68 /* ShowCartIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */; };
+		293DB60427449D8E007E7E68 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */; };
+		293DB60827449DB2007E7E68 /* DishBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60527449DB2007E7E68 /* DishBook.swift */; };
+		293DB60927449DB2007E7E68 /* CategoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60627449DB2007E7E68 /* CategoryBook.swift */; };
+		293DB60A27449DB2007E7E68 /* RestaurantBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60727449DB2007E7E68 /* RestaurantBook.swift */; };
+		293DB60C27449DD6007E7E68 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB60B27449DD5007E7E68 /* JsonLoader.swift */; };
 		AFC230432743EE11000B1EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230422743EE11000B1EA1 /* AppDelegate.swift */; };
 		AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230442743EE11000B1EA1 /* SceneDelegate.swift */; };
 		AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230462743EE11000B1EA1 /* ContentView.swift */; };
@@ -76,6 +83,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2907E33B2744A6B000CA2052 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
+		293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCartIntentHandler.swift; sourceTree = "<group>"; };
+		293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
+		293DB60527449DB2007E7E68 /* DishBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishBook.swift; sourceTree = "<group>"; };
+		293DB60627449DB2007E7E68 /* CategoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBook.swift; sourceTree = "<group>"; };
+		293DB60727449DB2007E7E68 /* RestaurantBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantBook.swift; sourceTree = "<group>"; };
+		293DB60B27449DD5007E7E68 /* JsonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		AFC2303F2743EE11000B1EA1 /* shortcut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shortcut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC230422743EE11000B1EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC230442743EE11000B1EA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,12 +189,20 @@
 			children = (
 				AFC230422743EE11000B1EA1 /* AppDelegate.swift */,
 				AFC230442743EE11000B1EA1 /* SceneDelegate.swift */,
+				293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */,
 				AFC230462743EE11000B1EA1 /* ContentView.swift */,
 				AFC230482743EE12000B1EA1 /* Assets.xcassets */,
 				AFC2304D2743EE12000B1EA1 /* LaunchScreen.storyboard */,
 				AFC230502743EE12000B1EA1 /* Info.plist */,
-				AFC2304A2743EE12000B1EA1 /* Preview Content */,
+				293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */,
+				293DB60027449D8E007E7E68 /* ShowCartIntentHandler.swift */,
+				293DB60627449DB2007E7E68 /* CategoryBook.swift */,
+				293DB60527449DB2007E7E68 /* DishBook.swift */,
+				293DB60727449DB2007E7E68 /* RestaurantBook.swift */,
+				293DB60B27449DD5007E7E68 /* JsonLoader.swift */,
 				AFC230A12743EF73000B1EA1 /* Intents.intentdefinition */,
+				2907E33B2744A6B000CA2052 /* restaurants.json */,
+				AFC2304A2743EE12000B1EA1 /* Preview Content */,
 			);
 			path = shortcut;
 			sourceTree = "<group>";
@@ -387,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2907E33C2744A6B000CA2052 /* restaurants.json in Resources */,
 				AFC2304F2743EE12000B1EA1 /* LaunchScreen.storyboard in Resources */,
 				AFC2304C2743EE12000B1EA1 /* Preview Assets.xcassets in Resources */,
 				AFC230492743EE12000B1EA1 /* Assets.xcassets in Resources */,
@@ -418,7 +442,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF94FFA027448E090014F73B /* Assets.xcassets in Resources */,
 				AFC2308D2743EEB3000B1EA1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,8 +455,15 @@
 			files = (
 				AFC230432743EE11000B1EA1 /* AppDelegate.swift in Sources */,
 				AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */,
+				293DB60427449D8E007E7E68 /* OrderFoodIntentHandler.swift in Sources */,
+				293DB60C27449DD6007E7E68 /* JsonLoader.swift in Sources */,
 				AFC230A22743EF73000B1EA1 /* Intents.intentdefinition in Sources */,
+				293DB60327449D8E007E7E68 /* ShowCartIntentHandler.swift in Sources */,
 				AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */,
+				293DB60A27449DB2007E7E68 /* RestaurantBook.swift in Sources */,
+				293DB5D627449921007E7E68 /* NSUserActivity+IntentData.swift in Sources */,
+				293DB60927449DB2007E7E68 /* CategoryBook.swift in Sources */,
+				293DB60827449DB2007E7E68 /* DishBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,14 +671,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"shortcut/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = shortcut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,14 +693,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"shortcut/Preview Content\"";
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = shortcut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -765,14 +795,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intentui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -784,14 +814,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intentui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -803,14 +833,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -822,14 +852,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9JGW72U5QT;
+				DEVELOPMENT_TEAM = 4X938UQG45;
 				INFOPLIST_FILE = ShortcutIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phuongvo.test.intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

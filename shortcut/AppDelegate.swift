@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Intents
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    lazy var orderFood: OrderFoodIntentHandler? = OrderFoodIntentHandler()
+    lazy var showCart: ShowCartIntentHandler? = ShowCartIntentHandler()
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     return true
@@ -27,4 +30,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
   }
+
+    func application(_ application: UIApplication, handlerFor intent: INIntent) -> Any? {
+        switch intent {
+        case intent as OrderFoodIntent:
+            return orderFood
+        case intent as ShowCartIntent:
+            return showCart
+//        case intent as SelectRestaurantIntent:
+//        case intent as SelectCategoryIntent:
+//        case intent as SelectDishIntent:
+//        case intent as SelectQuantityIntent:
+        default:
+            return nil
+        }
+    }
 }

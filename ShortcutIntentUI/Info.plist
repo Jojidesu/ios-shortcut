@@ -28,6 +28,8 @@
 			<array>
 				<string>CreateOrderIntent</string>
 				<string>INSendMessageIntent</string>
+				<string>OrderFoodIntent</string>
+				<string>ShowCartIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
