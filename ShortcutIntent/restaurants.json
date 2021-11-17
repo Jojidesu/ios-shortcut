@@ -2,6 +2,7 @@
     "restaurants": [
         {
             "restaurant_name": "Starbucks",
+            "image": "starbucks",
             "address": "West City Mall #01-03",
             "id": "143",
             "promotion": "Get 25% off with minimum order of 20$",
@@ -64,26 +65,31 @@
                     "items": [
                         {
                             "id": "item9",
+                            "image": "ham and cheese",
                             "name": "Ham & Cheese Wrap",
                             "price": "6.8"
                         },
                         {
                             "id": "item10",
+                            "image": "cheese bagel",
                             "name": "Cheese Bagel",
                             "price": "5.3"
                         },
                         {
                             "id": "item11",
+                            "image": "sausage roll",
                             "name": "Sausage Roll",
                             "price": "4.5"
                         },
                         {
                             "id": "item12",
+                            "image": "chicken pie",
                             "name": "Chicken Pie",
                             "price": "5.3"
                         },
                         {
                             "id": "item13",
+                            "image": "spicy mushroom",
                             "name": "Mushroom & Egg Wrap",
                             "price": "7.2"
                         }
@@ -119,6 +125,7 @@
         },
         {
             "restaurant_name": "Flax Curry Cafe",
+            "image": "curry",
             "address": "1 Woodlands Ave 2 #01-121",
             "id": "2",
             "cuisine_type": [
@@ -131,6 +138,7 @@
         },
         {
             "restaurant_name": "Prego",
+            "image": "prego",
             "address": "Parkway Hotel #02-03",
             "id": "3",
             "cuisine_type": [
@@ -143,6 +151,7 @@
         },
         {
             "restaurant_name": "Yishun Park Hawker Centre",
+            "image": "hawker",
             "address": "Yishun Avenue 2 #03-100",
             "id": "4",
             "cuisine_type": [
@@ -156,6 +165,7 @@
         },
         {
             "restaurant_name": "John's Burger Bar",
+            "image": "burger",
             "address": "Sembawang Shopping Centre #02-01",
             "id": "5",
             "cuisine_type": [

@@ -15,6 +15,7 @@ struct RestaurantModel: Decodable {
     let address: String?
     let cuisine: [String]?
     let promotion: String?
+    let image: String?
     let categories: [CategoryModel]?
 
     init(from decoder: Decoder) throws {
@@ -25,6 +26,7 @@ struct RestaurantModel: Decodable {
         cuisine = try container.decodeIfPresent(Array<String>.self, forKey: .cuisine)
         promotion = try container.decodeIfPresent(String.self, forKey: .promotion)
         categories = try container.decodeIfPresent(Array<CategoryModel>.self, forKey: .categories)
+        image = try container.decodeIfPresent(String.self, forKey: .image)
     }
 
     enum CodingKeys: String, CodingKey {
@@ -34,10 +36,12 @@ struct RestaurantModel: Decodable {
         case cuisine = "cuisine_type"
         case promotion
         case categories = "categories"
+        case image
     }
 
     var restaurant: Restaurant {
         let intentModel = Restaurant(identifier: identifier, display: displayString)
+        intentModel.displayImage = INImage(named: image ?? "burger")
         intentModel.address = address
         intentModel.cuisine = cuisine
         intentModel.promotion = promotion
