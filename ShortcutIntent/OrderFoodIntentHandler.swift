@@ -16,11 +16,11 @@ class OrderFoodIntentHandler: NSObject, OrderFoodIntentHandling {
         guard let _ = intent.restaurant,
         let _ = intent.dish,
         let _ = intent.quantity else {
-            completion(OrderFoodIntentResponse(code: .failure, userActivity: .orderFail)) //
+            completion(OrderFoodIntentResponse(code: .failure, userActivity: nil)) //
             return
         }
 
-        completion(OrderFoodIntentResponse(code: .success, userActivity: .viewCart))
+        completion(OrderFoodIntentResponse(code: .success, userActivity: nil))
     }
 
     func provideRestaurantOptionsCollection(for intent: OrderFoodIntent, with completion: @escaping (INObjectCollection<Restaurant>?, Error?) -> Void) {

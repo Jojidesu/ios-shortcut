@@ -8,15 +8,7 @@ Convenience utility for working with NSUserActivity.
 import Foundation
 import UniformTypeIdentifiers
 
-#if canImport(CoreSpotlight)
-    import CoreSpotlight
-    import UIKit
-#endif
-
 extension NSUserActivity {
-    public enum ActivityKeys: String {
-        case orderID
-    }
 
     public static let orderCompleteActivityType = "com.example.HuntingParty.orderComplete"
     public static let orderFailActivityType = "com.example.HuntingParty.orderFail"

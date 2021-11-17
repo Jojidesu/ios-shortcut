@@ -17,12 +17,24 @@ import Intents
 // "Search for messages in <myApp>"
 
 class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
-  override func handler(for intent: INIntent) -> Any {
-    guard intent is CreateOrderIntent else {
-      fatalError("Unhandled intent type: \(intent)")
-    }
+    lazy var orderFood: OrderFoodIntentHandler = OrderFoodIntentHandler()
+    lazy var showCart: ShowCartIntentHandler = ShowCartIntentHandler()
 
-    return CreateOrderIntentHandler()
+  override func handler(for intent: INIntent) -> Any {
+      switch intent {
+      case intent as OrderFoodIntent:
+          return orderFood
+      case intent as ShowCartIntent:
+          return showCart
+      case intent as CreateOrderIntent:
+          return CreateOrderIntentHandler()
+//        case intent as SelectRestaurantIntent:
+//        case intent as SelectCategoryIntent:
+//        case intent as SelectDishIntent:
+//        case intent as SelectQuantityIntent:
+      default:
+          fatalError("Unhandled intent type: \(intent)")
+      }
   }
 
   // MARK: - INSendMessageIntentHandling
