@@ -9,11 +9,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>u0cDsi</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20G165</string>
+	<string>19H1217</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>13A1030d</string>
+	<string>12D4e</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>13.1</string>
+	<string>12.4</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -548,6 +548,101 @@
 			<string>Show Cart</string>
 			<key>INIntentTitleID</key>
 			<string>ITxQn5</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentUserConfirmationRequired</key>
+			<true/>
+			<key>INIntentVerb</key>
+			<string>Order</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>order</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Creating order based on your selection</string>
+			<key>INIntentDescriptionID</key>
+			<string>vv3lkA</string>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Creating order based on your selection</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>oQokkT</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>CreateOrder</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Creating order based on your selection</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>dW1ko5</string>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Here's your order, totalling ${order.totalPrice} and paying with ${order.payment}</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>gCZeK0</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>2</integer>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Order</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>oGve25</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>order</string>
+						<key>INIntentResponseParameterObjectType</key>
+						<string>Order</string>
+						<key>INIntentResponseParameterObjectTypeNamespace</key>
+						<string>u0cDsi</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Object</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentRestrictions</key>
+			<integer>1</integer>
+			<key>INIntentTitle</key>
+			<string>Create Order</string>
+			<key>INIntentTitleID</key>
+			<string>1DRL0Q</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentUserConfirmationRequired</key>
