@@ -33,7 +33,7 @@
 		AFC230A22743EF73000B1EA1 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AFC230A12743EF73000B1EA1 /* Intents.intentdefinition */; };
 		AFC230A32743EF73000B1EA1 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AFC230A12743EF73000B1EA1 /* Intents.intentdefinition */; };
 		AFC230A42743EF73000B1EA1 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AFC230A12743EF73000B1EA1 /* Intents.intentdefinition */; };
-		AFC230BF2743F190000B1EA1 /* ShowCartIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230BE2743F190000B1EA1 /* ShowCartIntentHandler.swift */; };
+		AFC230BF2743F190000B1EA1 /* CreateOrderIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +115,7 @@
 		AFC2308C2743EEB3000B1EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AFC2308E2743EEB3000B1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFC230A12743EF73000B1EA1 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
-		AFC230BE2743F190000B1EA1 /* ShowCartIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCartIntentHandler.swift; sourceTree = "<group>"; };
+		AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC2307E2743EEB2000B1EA1 /* IntentHandler.swift */,
-				AFC230BE2743F190000B1EA1 /* ShowCartIntentHandler.swift */,
+				AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */,
 				AFC230802743EEB2000B1EA1 /* Info.plist */,
 			);
 			path = ShortcutIntent;
@@ -488,7 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC230A32743EF73000B1EA1 /* Intents.intentdefinition in Sources */,
-				AFC230BF2743F190000B1EA1 /* ShowCartIntentHandler.swift in Sources */,
+				AFC230BF2743F190000B1EA1 /* CreateOrderIntentHandler.swift in Sources */,
 				AFC2307F2743EEB2000B1EA1 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -703,7 +703,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -806,7 +806,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -825,7 +825,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -844,7 +844,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -863,7 +863,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shortcut.giorgy;
+				PRODUCT_BUNDLE_IDENTIFIER = gunawan.giorgy.shortcut.ShortcutIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
