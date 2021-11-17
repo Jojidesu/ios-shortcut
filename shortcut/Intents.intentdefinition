@@ -18,11 +18,11 @@
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>information</string>
+			<string>order</string>
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescription</key>
-			<string>Show my current cart</string>
+			<string>Creating order based on your selections</string>
 			<key>INIntentDescriptionID</key>
 			<string>61vhJr</string>
 			<key>INIntentManagedParameterCombinations</key>
@@ -32,7 +32,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Showing your current cart</string>
+					<string>Creating order based on your selections</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>duDh8f</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -40,7 +40,7 @@
 				</dict>
 			</dict>
 			<key>INIntentName</key>
-			<string>ShowCart</string>
+			<string>CreateOrder</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
 				<key></key>
@@ -50,7 +50,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Showing your current cart</string>
+					<string>Creating order based on your selections</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>SfaJS2</string>
 				</dict>
@@ -60,8 +60,12 @@
 				<key>INIntentResponseCodes</key>
 				<array>
 					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>here's your order, totaling ${order.totalPrice} and paying using ${order.payment}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>JB6kyH</string>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Showing the inside of your cart</string>
+						<string>here's your order, totaling ${order.totalPrice} and paying using ${order.payment}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>NDij7w</string>
 						<key>INIntentResponseCodeName</key>
@@ -79,29 +83,54 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>3</integer>
+				<integer>5</integer>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Order</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>2dznvW</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>order</string>
+						<key>INIntentResponseParameterObjectType</key>
+						<string>Order</string>
+						<key>INIntentResponseParameterObjectTypeNamespace</key>
+						<string>u0cDsi</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>5</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Object</string>
+					</dict>
+				</array>
 			</dict>
+			<key>INIntentRestrictions</key>
+			<integer>1</integer>
 			<key>INIntentTitle</key>
-			<string>Show Cart</string>
+			<string>Create Order</string>
 			<key>INIntentTitleID</key>
 			<string>1pXR3V</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
+			<key>INIntentUserConfirmationRequired</key>
+			<true/>
 			<key>INIntentVerb</key>
-			<string>View</string>
+			<string>Order</string>
 		</dict>
 	</array>
 	<key>INTypes</key>
 	<array>
 		<dict>
 			<key>INTypeDisplayName</key>
-			<string>Cart Item</string>
+			<string>Order</string>
 			<key>INTypeDisplayNameID</key>
-			<string>jCmBOq</string>
+			<string>YVXkRZ</string>
 			<key>INTypeLastPropertyTag</key>
-			<integer>103</integer>
+			<integer>102</integer>
 			<key>INTypeName</key>
-			<string>CartItem</string>
+			<string>Order</string>
 			<key>INTypeProperties</key>
 			<array>
 				<dict>
@@ -156,31 +185,31 @@
 				</dict>
 				<dict>
 					<key>INTypePropertyDisplayName</key>
-					<string>Quantity</string>
+					<string>Total Price</string>
 					<key>INTypePropertyDisplayNameID</key>
-					<string>YYnbTs</string>
+					<string>4ErZBh</string>
 					<key>INTypePropertyDisplayPriority</key>
 					<integer>5</integer>
 					<key>INTypePropertyName</key>
-					<string>quantity</string>
-					<key>INTypePropertyTag</key>
-					<integer>103</integer>
-					<key>INTypePropertyType</key>
-					<string>Integer</string>
-				</dict>
-				<dict>
-					<key>INTypePropertyDisplayName</key>
-					<string>Price</string>
-					<key>INTypePropertyDisplayNameID</key>
-					<string>gT08eS</string>
-					<key>INTypePropertyDisplayPriority</key>
-					<integer>6</integer>
-					<key>INTypePropertyName</key>
-					<string>price</string>
+					<string>totalPrice</string>
 					<key>INTypePropertyTag</key>
 					<integer>102</integer>
 					<key>INTypePropertyType</key>
 					<string>Decimal</string>
+				</dict>
+				<dict>
+					<key>INTypePropertyDisplayName</key>
+					<string>Payment</string>
+					<key>INTypePropertyDisplayNameID</key>
+					<string>qEY1Lj</string>
+					<key>INTypePropertyDisplayPriority</key>
+					<integer>6</integer>
+					<key>INTypePropertyName</key>
+					<string>payment</string>
+					<key>INTypePropertyTag</key>
+					<integer>101</integer>
+					<key>INTypePropertyType</key>
+					<string>String</string>
 				</dict>
 			</array>
 		</dict>

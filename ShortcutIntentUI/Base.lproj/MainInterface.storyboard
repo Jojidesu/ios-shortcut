@@ -16,26 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdB-gN-F2Z">
-                                <rect key="frame" x="8" y="36" width="304" height="106"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-YR-Nqs">
+                                <rect key="frame" x="0.0" y="44" width="320" height="106"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="BdB-gN-F2Z" secondAttribute="bottom" constant="8" id="9cj-gS-0kR"/>
-                            <constraint firstItem="BdB-gN-F2Z" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="8" id="eT6-yG-5n5"/>
-                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="BdB-gN-F2Z" secondAttribute="trailing" constant="8" id="n3d-jP-Y3n"/>
-                            <constraint firstItem="4PN-XC-lEE" firstAttribute="top" secondItem="BdB-gN-F2Z" secondAttribute="top" constant="8" id="qVa-aM-ZO9"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="top" secondItem="Yb0-YR-Nqs" secondAttribute="top" id="B1b-mO-zj4"/>
+                            <constraint firstItem="Yb0-YR-Nqs" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" id="JKs-LK-Zj2"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="Yb0-YR-Nqs" secondAttribute="bottom" id="eeN-0x-sLn"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="Yb0-YR-Nqs" secondAttribute="trailing" id="lkc-yw-a2I"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
                     <connections>
-                        <outlet property="textlabel" destination="BdB-gN-F2Z" id="9cR-kt-qrr"/>
+                        <outlet property="imageView" destination="Yb0-YR-Nqs" id="4To-X1-WJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>

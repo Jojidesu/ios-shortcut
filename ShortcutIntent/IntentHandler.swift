@@ -18,11 +18,11 @@ import Intents
 
 class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling {
   override func handler(for intent: INIntent) -> Any {
-    guard intent is ShowCartIntent else {
+    guard intent is CreateOrderIntent else {
       fatalError("Unhandled intent type: \(intent)")
     }
 
-    return ShowCartIntentHandler()
+    return CreateOrderIntentHandler()
   }
 
   // MARK: - INSendMessageIntentHandling

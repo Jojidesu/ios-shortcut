@@ -15,7 +15,7 @@ import IntentsUI
 // "Send a message using <myApp>"
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
-  @IBOutlet weak var textlabel: UILabel!
+  @IBOutlet weak var imageView: UIImageView!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -25,13 +25,12 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
 
   // Prepare your view controller for the interaction to handle.
   func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
-    guard interaction.intent is ShowCartIntent else {
+    guard interaction.intent is CreateOrderIntent else {
       completion(false, Set(), .zero)
       return
     }
 
     let width = self.extensionContext?.hostedViewMaximumAllowedSize.width ?? 320
-    let desiredSize = CGSize(width: width, height: 300)
 
     // The intentHandlingStatus never changed to .ready for me. It did sometimes change to .success.
     // Maybe this is buggy or maybe I don't understand how this should work
@@ -41,7 +40,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     // } else if interaction.intentHandlingStatus == .success {
     //     // A view for the .success state
     // }
-    textlabel.text = "this is showing cart"
+    imageView.image = UIImage(imageLiteralResourceName: "order-summary")
+    let desiredSize = CGSize(width: width, height: imageView.image?.size.height ?? 300)
 
     completion(true, parameters, desiredSize)
   }

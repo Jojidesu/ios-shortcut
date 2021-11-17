@@ -26,8 +26,8 @@
 		<dict>
 			<key>IntentsSupported</key>
 			<array>
+				<string>CreateOrderIntent</string>
 				<string>INSendMessageIntent</string>
-				<string>ShowCartIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
