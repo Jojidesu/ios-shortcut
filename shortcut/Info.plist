@@ -30,6 +30,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>CreateOrderIntent</string>
+		<string>FindNearbyRestaurantsIntent</string>
 		<string>OrderFoodIntent</string>
 		<string>ReorderIntent</string>
 	</array>

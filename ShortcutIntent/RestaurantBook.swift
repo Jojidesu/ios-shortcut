@@ -63,6 +63,10 @@ extension Restaurant: CaseIterable {
 //        stubs
     }
 
+    static var allNames: [String] {
+        Self.allCases.compactMap { $0.displayString }
+    }
+
     static var stubs: [Restaurant] {
         [
             restaurant,

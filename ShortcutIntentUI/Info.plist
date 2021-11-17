@@ -27,6 +27,7 @@
 			<key>IntentsSupported</key>
 			<array>
 				<string>CreateOrderIntent</string>
+				<string>FindNearbyRestaurantsIntent</string>
 				<string>INSendMessageIntent</string>
 				<string>OrderFoodIntent</string>
 				<string>ReorderIntent</string>

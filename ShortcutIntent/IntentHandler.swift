@@ -27,6 +27,10 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
           return CreateOrderIntentHandler()
       case intent as ReorderIntent:
           return ReorderIntentHandler()
+      case intent as FindNearbyRestaurantsIntent:
+//          return ReorderIntentHandler()
+//          fatalError("Unhandled intent type: \(intent)")
+          return FindNearbyRestaurantsIntentHandler()
 //        case intent as SelectRestaurantIntent:
 //        case intent as SelectCategoryIntent:
 //        case intent as SelectDishIntent:

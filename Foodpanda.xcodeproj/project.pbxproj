@@ -16,6 +16,7 @@
 		293C25E62744CEEF002E3435 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 2907E33B2744A6B000CA2052 /* restaurants.json */; };
 		293C25E72744D0E7002E3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC230482743EE12000B1EA1 /* Assets.xcassets */; };
 		293C25E92744E305002E3435 /* ReorderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293C25E82744E305002E3435 /* ReorderHandler.swift */; };
+		293C25EB2744F0D0002E3435 /* FindNearbyRestaurantsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293C25EA2744F0D0002E3435 /* FindNearbyRestaurantsIntentHandler.swift */; };
 		AFC230432743EE11000B1EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230422743EE11000B1EA1 /* AppDelegate.swift */; };
 		AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230442743EE11000B1EA1 /* SceneDelegate.swift */; };
 		AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230462743EE11000B1EA1 /* ContentView.swift */; };
@@ -86,6 +87,7 @@
 /* Begin PBXFileReference section */
 		2907E33B2744A6B000CA2052 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		293C25E82744E305002E3435 /* ReorderHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderHandler.swift; sourceTree = "<group>"; };
+		293C25EA2744F0D0002E3435 /* FindNearbyRestaurantsIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNearbyRestaurantsIntentHandler.swift; sourceTree = "<group>"; };
 		293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
 		293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
 		293DB60527449DB2007E7E68 /* DishBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishBook.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */,
 				293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */,
 				293C25E82744E305002E3435 /* ReorderHandler.swift */,
+				293C25EA2744F0D0002E3435 /* FindNearbyRestaurantsIntentHandler.swift */,
 				293DB60627449DB2007E7E68 /* CategoryBook.swift */,
 				293DB60527449DB2007E7E68 /* DishBook.swift */,
 				293DB60727449DB2007E7E68 /* RestaurantBook.swift */,
@@ -488,6 +491,7 @@
 				293C25E52744CEDC002E3435 /* NSUserActivity+IntentData.swift in Sources */,
 				293C25E92744E305002E3435 /* ReorderHandler.swift in Sources */,
 				293C25E32744BBB5002E3435 /* RestaurantBook.swift in Sources */,
+				293C25EB2744F0D0002E3435 /* FindNearbyRestaurantsIntentHandler.swift in Sources */,
 				293C25E12744BBB5002E3435 /* DishBook.swift in Sources */,
 				AFC230BF2743F190000B1EA1 /* CreateOrderIntentHandler.swift in Sources */,
 				293C25E02744BBB5002E3435 /* CategoryBook.swift in Sources */,

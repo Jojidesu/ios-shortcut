@@ -631,6 +631,91 @@
 			<key>INIntentVerb</key>
 			<string>Order</string>
 		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>information</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescriptionID</key>
+			<string>tSPCnX</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>3</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>FindNearbyRestaurants</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsLinked</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Arround you there are ${restaurantNames}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>J0oZ6V</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Arround you there are ${restaurantNames}</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>f1jQ8W</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>2</integer>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Restaurant Names</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>Q3dE99</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>restaurantNames</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<true/>
+						<key>INIntentResponseParameterTag</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Find Nearby Restaurants</string>
+			<key>INIntentTitleID</key>
+			<string>cbRM3S</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>View</string>
+		</dict>
 	</array>
 	<key>INTypes</key>
 	<array>
