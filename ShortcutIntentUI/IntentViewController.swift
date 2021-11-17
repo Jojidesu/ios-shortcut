@@ -25,28 +25,32 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
 
   // Prepare your view controller for the interaction to handle.
   func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
-    guard interaction.intent is CreateOrderIntent else {
-      completion(false, Set(), .zero)
-      return
-    }
-
-    let width = self.extensionContext?.hostedViewMaximumAllowedSize.width ?? 320
-
-    // The intentHandlingStatus never changed to .ready for me. It did sometimes change to .success.
-    // Maybe this is buggy or maybe I don't understand how this should work
-    //
-    // if interaction.intentHandlingStatus == .ready {
-    //     // A view for the .ready state
-    // } else if interaction.intentHandlingStatus == .success {
-    //     // A view for the .success state
-    // }
-    imageView.image = UIImage(imageLiteralResourceName: "order-summary")
-    let desiredSize = CGSize(width: width, height: imageView.image?.size.height ?? 300)
-
-    completion(true, parameters, desiredSize)
+      let intent = interaction.intent
+      switch intent {
+      case intent as CreateOrderIntent:
+          let image = UIImage(imageLiteralResourceName: "order-summary")
+          imageView.image = image
+          completion(true, parameters, desiredSize(imageSize: image.size))
+      case intent as ReorderIntent:
+          let image = UIImage(imageLiteralResourceName: "reorder")
+          imageView.image = image
+          completion(true, parameters, desiredSize(imageSize: image.size))
+//        case intent as SelectRestaurantIntent:
+//        case intent as SelectCategoryIntent:
+//        case intent as SelectDishIntent:
+//        case intent as SelectQuantityIntent:
+//      case intent as OrderFoodIntent:
+      default:
+          completion(false, Set(), .zero)
+      }
   }
 
-  var desiredSize: CGSize {
-    return extensionContext!.hostedViewMaximumAllowedSize
+    private func desiredSize(imageSize: CGSize) -> CGSize {
+        let width = self.extensionContext?.hostedViewMaximumAllowedSize.width ?? 320
+        let ratio = imageSize.height/imageSize.width
+        let height = imageSize.height / ratio
+        return CGSize(width: width, height: height)
   }
+
+
 }

@@ -25,6 +25,8 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
           return orderFood
       case intent as CreateOrderIntent:
           return CreateOrderIntentHandler()
+      case intent as ReorderIntent:
+          return ReorderIntentHandler()
 //        case intent as SelectRestaurantIntent:
 //        case intent as SelectCategoryIntent:
 //        case intent as SelectDishIntent:

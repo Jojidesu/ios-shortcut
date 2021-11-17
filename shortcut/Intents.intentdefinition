@@ -561,17 +561,23 @@
 		</dict>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>generic</string>
+			<string>order</string>
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescriptionID</key>
 			<string>bM09K6</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>2</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key></key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Do you want to place your last order?</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>yAP1tW</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
@@ -582,10 +588,14 @@
 			<dict>
 				<key></key>
 				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
+					<key>INIntentParameterCombinationIsLinked</key>
 					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Do you want to place your last order?</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>IVdyJe</string>
 				</dict>
 			</dict>
 			<key>INIntentResponse</key>
@@ -593,6 +603,10 @@
 				<key>INIntentResponseCodes</key>
 				<array>
 					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Your order have been placed!</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>SjRRh0</string>
 						<key>INIntentResponseCodeName</key>
 						<string>success</string>
 						<key>INIntentResponseCodeSuccess</key>
@@ -604,14 +618,18 @@
 					</dict>
 				</array>
 			</dict>
+			<key>INIntentRestrictions</key>
+			<integer>1</integer>
 			<key>INIntentTitle</key>
-			<string>Reorder</string>
+			<string>Reorder last one</string>
 			<key>INIntentTitleID</key>
 			<string>ta2Cks</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
+			<key>INIntentUserConfirmationRequired</key>
+			<true/>
 			<key>INIntentVerb</key>
-			<string>Do</string>
+			<string>Order</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

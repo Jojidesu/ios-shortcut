@@ -28,6 +28,7 @@
 			<array>
 				<string>CreateOrderIntent</string>
 				<string>OrderFoodIntent</string>
+				<string>ReorderIntent</string>
 			</array>
 			<key>IntentsRestrictedWhileProtectedDataUnavailable</key>
 			<array/>

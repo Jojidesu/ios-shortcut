@@ -15,6 +15,7 @@
 		293C25E52744CEDC002E3435 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */; };
 		293C25E62744CEEF002E3435 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 2907E33B2744A6B000CA2052 /* restaurants.json */; };
 		293C25E72744D0E7002E3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC230482743EE12000B1EA1 /* Assets.xcassets */; };
+		293C25E92744E305002E3435 /* ReorderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293C25E82744E305002E3435 /* ReorderHandler.swift */; };
 		AFC230432743EE11000B1EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230422743EE11000B1EA1 /* AppDelegate.swift */; };
 		AFC230452743EE11000B1EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230442743EE11000B1EA1 /* SceneDelegate.swift */; };
 		AFC230472743EE11000B1EA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC230462743EE11000B1EA1 /* ContentView.swift */; };
@@ -84,13 +85,14 @@
 
 /* Begin PBXFileReference section */
 		2907E33B2744A6B000CA2052 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		293C25E82744E305002E3435 /* ReorderHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderHandler.swift; sourceTree = "<group>"; };
 		293DB5D527449921007E7E68 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
 		293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
 		293DB60527449DB2007E7E68 /* DishBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishBook.swift; sourceTree = "<group>"; };
 		293DB60627449DB2007E7E68 /* CategoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBook.swift; sourceTree = "<group>"; };
 		293DB60727449DB2007E7E68 /* RestaurantBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantBook.swift; sourceTree = "<group>"; };
 		293DB60B27449DD5007E7E68 /* JsonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
-		AFC2303F2743EE11000B1EA1 /* shortcut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shortcut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC2303F2743EE11000B1EA1 /* Foodpanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodpanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC230422743EE11000B1EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC230442743EE11000B1EA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFC230462743EE11000B1EA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,10 +100,10 @@
 		AFC2304B2743EE12000B1EA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFC2304E2743EE12000B1EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC230502743EE12000B1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFC230552743EE12000B1EA1 /* shortcutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shortcutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC230552743EE12000B1EA1 /* FoodpandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodpandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC230592743EE12000B1EA1 /* shortcutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortcutTests.swift; sourceTree = "<group>"; };
 		AFC2305B2743EE12000B1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFC230602743EE12000B1EA1 /* shortcutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shortcutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC230602743EE12000B1EA1 /* FoodpandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodpandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC230642743EE12000B1EA1 /* shortcutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortcutUITests.swift; sourceTree = "<group>"; };
 		AFC230662743EE12000B1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFC230792743EEB2000B1EA1 /* ShortcutIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,9 +176,9 @@
 		AFC230402743EE11000B1EA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFC2303F2743EE11000B1EA1 /* shortcut.app */,
-				AFC230552743EE12000B1EA1 /* shortcutTests.xctest */,
-				AFC230602743EE12000B1EA1 /* shortcutUITests.xctest */,
+				AFC2303F2743EE11000B1EA1 /* Foodpanda.app */,
+				AFC230552743EE12000B1EA1 /* FoodpandaTests.xctest */,
+				AFC230602743EE12000B1EA1 /* FoodpandaUITests.xctest */,
 				AFC230792743EEB2000B1EA1 /* ShortcutIntent.appex */,
 				AFC230852743EEB3000B1EA1 /* ShortcutIntentUI.appex */,
 			);
@@ -239,6 +241,7 @@
 				AFC2307E2743EEB2000B1EA1 /* IntentHandler.swift */,
 				AFC230BE2743F190000B1EA1 /* CreateOrderIntentHandler.swift */,
 				293DB60127449D8E007E7E68 /* OrderFoodIntentHandler.swift */,
+				293C25E82744E305002E3435 /* ReorderHandler.swift */,
 				293DB60627449DB2007E7E68 /* CategoryBook.swift */,
 				293DB60527449DB2007E7E68 /* DishBook.swift */,
 				293DB60727449DB2007E7E68 /* RestaurantBook.swift */,
@@ -263,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFC2303E2743EE11000B1EA1 /* shortcut */ = {
+		AFC2303E2743EE11000B1EA1 /* Foodpanda */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFC230692743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcut" */;
+			buildConfigurationList = AFC230692743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "Foodpanda" */;
 			buildPhases = (
 				AFC2303B2743EE11000B1EA1 /* Sources */,
 				AFC2303C2743EE11000B1EA1 /* Frameworks */,
@@ -278,14 +281,14 @@
 				AFC230902743EEB3000B1EA1 /* PBXTargetDependency */,
 				AFC230932743EEB3000B1EA1 /* PBXTargetDependency */,
 			);
-			name = shortcut;
+			name = Foodpanda;
 			productName = shortcut;
-			productReference = AFC2303F2743EE11000B1EA1 /* shortcut.app */;
+			productReference = AFC2303F2743EE11000B1EA1 /* Foodpanda.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFC230542743EE12000B1EA1 /* shortcutTests */ = {
+		AFC230542743EE12000B1EA1 /* FoodpandaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFC2306C2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcutTests" */;
+			buildConfigurationList = AFC2306C2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "FoodpandaTests" */;
 			buildPhases = (
 				AFC230512743EE12000B1EA1 /* Sources */,
 				AFC230522743EE12000B1EA1 /* Frameworks */,
@@ -296,14 +299,14 @@
 			dependencies = (
 				AFC230572743EE12000B1EA1 /* PBXTargetDependency */,
 			);
-			name = shortcutTests;
+			name = FoodpandaTests;
 			productName = shortcutTests;
-			productReference = AFC230552743EE12000B1EA1 /* shortcutTests.xctest */;
+			productReference = AFC230552743EE12000B1EA1 /* FoodpandaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AFC2305F2743EE12000B1EA1 /* shortcutUITests */ = {
+		AFC2305F2743EE12000B1EA1 /* FoodpandaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFC2306F2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcutUITests" */;
+			buildConfigurationList = AFC2306F2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "FoodpandaUITests" */;
 			buildPhases = (
 				AFC2305C2743EE12000B1EA1 /* Sources */,
 				AFC2305D2743EE12000B1EA1 /* Frameworks */,
@@ -314,9 +317,9 @@
 			dependencies = (
 				AFC230622743EE12000B1EA1 /* PBXTargetDependency */,
 			);
-			name = shortcutUITests;
+			name = FoodpandaUITests;
 			productName = shortcutUITests;
-			productReference = AFC230602743EE12000B1EA1 /* shortcutUITests.xctest */;
+			productReference = AFC230602743EE12000B1EA1 /* FoodpandaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		AFC230782743EEB2000B1EA1 /* ShortcutIntent */ = {
@@ -381,7 +384,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFC2303A2743EE11000B1EA1 /* Build configuration list for PBXProject "shortcut" */;
+			buildConfigurationList = AFC2303A2743EE11000B1EA1 /* Build configuration list for PBXProject "Foodpanda" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -394,9 +397,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFC2303E2743EE11000B1EA1 /* shortcut */,
-				AFC230542743EE12000B1EA1 /* shortcutTests */,
-				AFC2305F2743EE12000B1EA1 /* shortcutUITests */,
+				AFC2303E2743EE11000B1EA1 /* Foodpanda */,
+				AFC230542743EE12000B1EA1 /* FoodpandaTests */,
+				AFC2305F2743EE12000B1EA1 /* FoodpandaUITests */,
 				AFC230782743EEB2000B1EA1 /* ShortcutIntent */,
 				AFC230842743EEB3000B1EA1 /* ShortcutIntentUI */,
 			);
@@ -483,6 +486,7 @@
 				293C25E42744BBB5002E3435 /* JsonLoader.swift in Sources */,
 				293C25E22744BBB5002E3435 /* OrderFoodIntentHandler.swift in Sources */,
 				293C25E52744CEDC002E3435 /* NSUserActivity+IntentData.swift in Sources */,
+				293C25E92744E305002E3435 /* ReorderHandler.swift in Sources */,
 				293C25E32744BBB5002E3435 /* RestaurantBook.swift in Sources */,
 				293C25E12744BBB5002E3435 /* DishBook.swift in Sources */,
 				AFC230BF2743F190000B1EA1 /* CreateOrderIntentHandler.swift in Sources */,
@@ -505,12 +509,12 @@
 /* Begin PBXTargetDependency section */
 		AFC230572743EE12000B1EA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFC2303E2743EE11000B1EA1 /* shortcut */;
+			target = AFC2303E2743EE11000B1EA1 /* Foodpanda */;
 			targetProxy = AFC230562743EE12000B1EA1 /* PBXContainerItemProxy */;
 		};
 		AFC230622743EE12000B1EA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFC2303E2743EE11000B1EA1 /* shortcut */;
+			target = AFC2303E2743EE11000B1EA1 /* Foodpanda */;
 			targetProxy = AFC230612743EE12000B1EA1 /* PBXContainerItemProxy */;
 		};
 		AFC230902743EEB3000B1EA1 /* PBXTargetDependency */ = {
@@ -727,7 +731,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shortcut.app/shortcut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodpanda.app/Foodpanda";
 			};
 			name = Debug;
 		};
@@ -749,7 +753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shortcut.app/shortcut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodpanda.app/Foodpanda";
 			};
 			name = Release;
 		};
@@ -872,7 +876,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFC2303A2743EE11000B1EA1 /* Build configuration list for PBXProject "shortcut" */ = {
+		AFC2303A2743EE11000B1EA1 /* Build configuration list for PBXProject "Foodpanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFC230672743EE12000B1EA1 /* Debug */,
@@ -881,7 +885,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFC230692743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcut" */ = {
+		AFC230692743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "Foodpanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFC2306A2743EE12000B1EA1 /* Debug */,
@@ -890,7 +894,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFC2306C2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcutTests" */ = {
+		AFC2306C2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "FoodpandaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFC2306D2743EE12000B1EA1 /* Debug */,
@@ -899,7 +903,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFC2306F2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "shortcutUITests" */ = {
+		AFC2306F2743EE12000B1EA1 /* Build configuration list for PBXNativeTarget "FoodpandaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFC230702743EE12000B1EA1 /* Debug */,
